@@ -19,6 +19,7 @@ public:
   string getMinuteString();
 
   void incrementClock();
+  void decrementClock();
 
   string toString();
 private:
@@ -27,4 +28,7 @@ private:
 
   void incrementHour();
   void incrementMinute();
+
+  void decrementHour();
+  void decrementMinute();
 };

@@ -152,6 +152,45 @@ void Clock::incrementMinute()
 }
 
 /**
+ * This method will decrement the entire clock. If the minute value will cause
+ * the hour value to decrement, then the hour will be decremented at the same 
+ * time.
+ */
+void Clock::decrementClock()
+{
+  // decrement the hour if the minute will 'tick over'
+  if(minute == 0)
+  {
+    decrementHour();
+  }
+
+  // Increment the minute by default
+  decrementMinute();  
+}
+
+/**
+ * This method will decrement the hour value only.
+ */
+void Clock::decrementHour()
+{
+  if(hour == 0)
+    hour = 23;
+  else
+    hour -= 1;
+}
+
+/**
+ * This method will decrement the minute value only.
+ */
+void Clock::decrementMinute()
+{
+  if(minute == 0)
+    minute = 59;
+  else
+    minute -= 1;
+}
+
+/**
  * This method will return a string representation of the current state of the
  * object.
  *

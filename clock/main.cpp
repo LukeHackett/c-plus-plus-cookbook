@@ -29,5 +29,14 @@ int main()
     cout << "The time is now " << c->toString() << endl;
   }
 
+  // decrement the time by 1 hour for testing purposes
+  cout << endl << "Decrement the time by 60 minutes." << endl;
+  for(int i = 0; i < 60; i++)
+  {
+    c->decrementClock();
+    cout << "The time is now " << c->toString() << endl;
+  }
+
+  
   return 0;
 }
