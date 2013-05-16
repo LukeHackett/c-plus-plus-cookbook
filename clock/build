@@ -1,0 +1,3 @@
+echo "Building Source Code"
+echo "EXECUTING:: g++ main.cpp clock.cpp -o clock.exe"
+g++ main.cpp clock.cpp -o clock.exe
