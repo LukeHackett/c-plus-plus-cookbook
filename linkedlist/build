@@ -1,0 +1,3 @@
+echo "Building Source Code"
+echo "EXECUTING:: g++ LinkedList.cpp main.cpp -o list.exe"
+g++ LinkedList.cpp main.cpp -o list.exe
